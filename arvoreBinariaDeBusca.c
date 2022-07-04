@@ -48,11 +48,6 @@ void funcaoSwitch(){
         
             break;
 
-        case 4:
-            if (confereArvore(arvore)){
-                printf("\nArvore VAZIA\n");
-            }else printf("Arvore NAO vazia");
-        break;
 
         }   
     }
@@ -95,7 +90,6 @@ void inserirArvore(arvoreBinaria **arv, int elemento){
     }else{
         if(elemento < (*arv)->info){ //Se o numero for menor vai para a esquerda
             inserirArvore(&(*arv)->esq, elemento);
-            printf("AAAAA\n");
         }
         if(elemento > (*arv)->info){ //Se o numero for maior vai para a direita
             inserirArvore(&(*arv)->esq, elemento);
